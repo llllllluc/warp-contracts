@@ -34,6 +34,10 @@
     "pisco": {
       "mnemonic": "notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius",
       "network": "testnet"
+    },
+    "local": {
+      "mnemonic": "symbol force gallery make bulk round subway violin worry mixture penalty kingdom boring survey tool fringe patrol sausage hard admit remember broken alien absorb",
+      "network": "localterra"
     }
   }
 }

@@ -1,10 +1,12 @@
 {
   "localterra": {
     "warp-account": {
-      "codeId": "12"
+      "codeId": "11",
+      "address": "terra14khjxsvmklm8kg97vhrn5wc2tz3w57na5seeke3qnwashe4pxd3qmljkek"
     },
     "warp-controller": {
-      "codeId": "13"
+      "codeId": "12",
+      "address": "terra1wxvlkpqfekzc5macvm23cg724rxef6zdng0nl3t2ar7z3lxfyhmqf0zu55"
     }
   },
   "testnet": {

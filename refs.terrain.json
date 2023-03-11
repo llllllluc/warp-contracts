@@ -1,0 +1,16 @@
+{
+  "localterra": {
+    "warp-account": {
+      "codeId": "14",
+      "contractAddresses": {
+        "default": "terra1zxvazn2rfgru3q5healat0dpr5cjaewj3yak2urf77f6d3kgw4eq9stqdm"
+      }
+    },
+    "warp-controller": {
+      "codeId": "12",
+      "contractAddresses": {
+        "default": "terra1wxvlkpqfekzc5macvm23cg724rxef6zdng0nl3t2ar7z3lxfyhmqf0zu55"
+      }
+    }
+  }
+}

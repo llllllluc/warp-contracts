@@ -12,6 +12,8 @@
   "scripts": {
     "deploy:warp": "TERRARIUMS_ARCH_ARM64=true yarn terrariums run tasks/deploy_warp.ts --network testnet --signer pisco",
     "migrate:warp": "TERRARIUMS_ARCH_ARM64=true yarn terrariums run tasks/migrate_warp.ts --network testnet --signer pisco",
+    "x86-deploy-localterra:warp": "yarn terrariums run tasks/deploy_warp.ts --network localterra --signer local",
+    "x86-migrate-localterra:warp": "yarn terrariums run tasks/migrate_warp.ts --network localterra --signer local",
     "postinstall": "husky install"
   },
   "dependencies": {

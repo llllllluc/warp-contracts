@@ -8,6 +8,10 @@ task(async ({ deployer, signer, refs }) => {
   const id = await deployer.storeCode("warp-account");
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
+  // needed for terrarium to successfully import warp account contract
+  // we will not actually use this account, we only create account by calling warp-controller
+  // await deployer.instantiate("warp-account", { owner: "terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95" })
+
   //controller
   deployer.buildContract("warp-controller");
   deployer.optimizeContract("warp-controller");
