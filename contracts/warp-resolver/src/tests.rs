@@ -333,7 +333,7 @@ fn test_hydrate_vars_nested() {
     let var1 = Variable::Static(StaticVariable {
         name: "var1".to_string(),
         kind: VariableKind::String,
-        value: "static_value".to_string(),
+        value: "static_value_1".to_string(),
         update_fn: None,
         encode: false,
     });
@@ -390,7 +390,7 @@ fn test_hydrate_vars_nested() {
     // Base64 encode the bytes
     let encoded_data = base64::encode(json_bytes);
 
-    println!("Base64 Encoded Data: {} \n\n\n", encoded_data);
+    // println!("Base64 Encoded Data: {} \n\n\n", encoded_data);
 
     let var2 = Variable::Static(StaticVariable {
         name: "var2".to_string(),
@@ -410,6 +410,8 @@ fn test_hydrate_vars_nested() {
                 "Decoded Val: {}\n\n\n",
                 String::from_utf8(decoded_val).unwrap()
             );
+            // Decoded Val: {"swap":{"offer_asset":{"info":{"native_token":{"denom":"example_denom"}},"amount":"$warp.variable.var1"},"max_spread":"0.01","to":"your_address_here"}}
+            // as you can see, var1 is not replaced to static_value_1 as expected
         }
         _ => panic!("Expected static variable"),
     }
